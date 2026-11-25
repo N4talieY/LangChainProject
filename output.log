@@ -1,0 +1,40 @@
+
+
+> Entering new RunnableSequence chain...
+
+
+> Entering new PromptTemplate chain...
+
+> Finished chain.
+
+
+> Entering new StrOutputParser chain...
+
+> Finished chain.
+
+> Finished chain.
+[32m2026-10-19 19:28:13.509[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m30[0m - [1m3[0m
+
+
+> Entering new RunnableSequence chain...
+
+
+> Entering new PromptTemplate chain...
+
+> Finished chain.
+
+
+> Entering new RunnableSequence chain...
+
+
+> Entering new PromptTemplate chain...
+
+> Finished chain.
+
+
+> Entering new StrOutputParser chain...
+
+> Finished chain.
+
+> Finished chain.
+[32m2026-10-19 19:38:56.177[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m29[0m - [1m3[0m
