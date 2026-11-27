@@ -16,7 +16,7 @@ def configure_gemini() -> str | None:
                 continue
             name, value = line.split("=", 1)
             name, value = name.strip(), value.strip()
-            if name not in {"GOOGLE_API_KEY", "GEMINI_API_KEY", "HUGGINGFACEHUB_API_TOKEN"}:
+            if name not in {"GOOGLE_API_KEY", "GEMINI_API_KEY", "HUGGINGFACEHUB_API_TOKEN", "SERPAPI_API_KEY"}:
                 continue
             if len(value) >= 2 and value[0] == value[-1] and value[0] in {"\"", "'"}:
                 value = value[1:-1]

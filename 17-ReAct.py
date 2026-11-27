@@ -9,7 +9,9 @@ if str(_project_root) not in _sys.path:
 from gemini_config import configure_gemini
 configure_gemini()
 
-os.environ["SERPAPI_API_KEY"] = '726f0a49171bf4816441ae8d6f7e000aedcec8f1987a829d8f37eca631b87d3b'
+if not os.getenv("SERPAPI_API_KEY"):
+    raise RuntimeError("请在项目根目录 .env 中设置 SERPAPI_API_KEY。")
+
 
 os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
 os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
@@ -72,4 +74,5 @@ result = agent.invoke({
 
 print(result["messages"])
 
-print(result["output"])
+final_message = result["messages"][-1]
+print(final_message.content)
